@@ -13,7 +13,7 @@ const Routes =()=> {
     return(
         <Router>
             <Switch>
-                <Route exact path="/covidproject" component={CountriesDashboard}></Route>
+                <Route exact path="/covidproject/" component={CountriesDashboard}></Route>
                 {/* <Route path="/CountriesDashboard" exact component={CountriesDashboard}></Route> */}
                 <Route path="/CountriesTable" exact component={CountriesTable}></Route>
                 <Route path="/IndiaDashboard" exact component={IndiaDashboard}></Route>

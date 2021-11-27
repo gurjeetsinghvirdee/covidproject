@@ -28,7 +28,7 @@ const Sidebar = () => {
                                     <li class="nav-item">
                                         <div class="nav-link">
                                             <i class="fa fa-circle nav-icon"></i>
-                                            <Link to="/covidproject"><p>Dashboard</p></Link>
+                                            <Link to="/covidproject/"><p>Dashboard</p></Link>
                                         </div>
                                     </li>
                                     <li class="nav-item">

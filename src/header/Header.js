@@ -13,7 +13,7 @@ const Header = () => {
                         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                     </li>
                     <li class="nav-item d-none d-sm-inline-block">
-                        <Link to="/covidproject"><a href="#" class="nav-link">Home</a></Link>
+                        <Link to="/covidproject/"><a href="#" class="nav-link">Home</a></Link>
                     </li>
                 </ul>
 
