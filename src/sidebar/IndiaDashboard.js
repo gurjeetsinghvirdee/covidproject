@@ -208,7 +208,7 @@ class IndiaDashboard extends React.Component {
                                             </div>
                                             {/* /.card-body */}
                                             <div class="card-footer clearfix">
-                                                <Link to="/StatesTable"><button class="btn btn-sm btn-secondary float-right">View all states data</button></Link>
+                                                <Link to="/covidproject/StatesTable"><button class="btn btn-sm btn-secondary float-right">View all states data</button></Link>
                                             </div>
                                             {/* /.card-footer */}
                                         </div>

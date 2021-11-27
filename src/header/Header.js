@@ -34,11 +34,9 @@ const Header = () => {
 
             {/* Main Footer */}
             <footer class="main-footer">
-                <strong>Copyright &copy; 2020-2021 <a href="#">Nidhi pal</a>.</strong>
+                <strong>Copyright &copy; 2020-2021 <a href="https://nidhipal09.github.io/MyWebsite/">Nidhi pal</a>. </strong>
                 All rights reserved.
-                <div class="float-right d-none d-sm-inline-block">
-                    <b>Version</b> 3.1.0
-                </div>
+                
             </footer>
 
         </div>

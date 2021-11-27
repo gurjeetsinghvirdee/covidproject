@@ -196,7 +196,7 @@ class CountriesDashboard extends React.Component {
                                             </div>
                                             {/* /.card-body */}
                                             <div class="card-footer clearfix">
-                                                <Link to="/CountriesTable"><button class="btn btn-sm btn-secondary float-right">View all countries data</button></Link>
+                                                <Link to="/covidproject/CountriesTable"><button class="btn btn-sm btn-secondary float-right">View all countries data</button></Link>
                                             </div>
                                             {/* /.card-footer */}
                                         </div>
