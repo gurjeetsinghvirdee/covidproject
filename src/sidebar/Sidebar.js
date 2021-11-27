@@ -35,7 +35,7 @@ const Sidebar = () => {
 
                                     <a href="#" class="nav-link">
                                             <i class="fa fa-circle nav-icon"></i>
-                                            <Link to="/CountriesTable"><p>Countries data</p></Link>
+                                            <Link to="/covidproject/CountriesTable"><p>Countries data</p></Link>
                                         </a>
 
                                     </li>
@@ -56,19 +56,19 @@ const Sidebar = () => {
                                     <li class="nav-item">
                                     <a href="#" class="nav-link">
                                             <i class="fa fa-circle nav-icon"></i>
-                                            <Link to="/IndiaDashboard"><p>Dashboard</p></Link>
+                                            <Link to="/covidproject/IndiaDashboard"><p>Dashboard</p></Link>
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                     <a href="#" class="nav-link">
                                             <i class="fa fa-circle nav-icon"></i>
-                                            <Link to="/StatesTable"><p>India data</p></Link>
+                                            <Link to="/covidproject/StatesTable"><p>India data</p></Link>
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                     <a href="#" class="nav-link">
                                             <i class="fa fa-circle nav-icon"></i>
-                                            <Link to="/StateDistrictsTable"><p>States data</p></Link>
+                                            <Link to="/covidproject/StateDistrictsTable"><p>States data</p></Link>
                                         </a>
                                     </li>
 
@@ -79,7 +79,7 @@ const Sidebar = () => {
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon"><img src="dist/img/8.ico"></img></i>
                                     <p>
-                                    <Link to="/Faqs"><p>FAQs</p></Link>
+                                    <Link to="/covidproject/Faqs"><p>FAQs</p></Link>
 
                                     </p>
                                 </a>
