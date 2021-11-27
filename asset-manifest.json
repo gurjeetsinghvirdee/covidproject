@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/covidproject/static/js/main.082bafdb.chunk.js",
+    "main.js.map": "/covidproject/static/js/main.082bafdb.chunk.js.map",
+    "runtime-main.js": "/covidproject/static/js/runtime-main.cfdbb344.js",
+    "runtime-main.js.map": "/covidproject/static/js/runtime-main.cfdbb344.js.map",
+    "static/js/2.8571f745.chunk.js": "/covidproject/static/js/2.8571f745.chunk.js",
+    "static/js/2.8571f745.chunk.js.map": "/covidproject/static/js/2.8571f745.chunk.js.map",
+    "index.html": "/covidproject/index.html",
+    "static/js/2.8571f745.chunk.js.LICENSE.txt": "/covidproject/static/js/2.8571f745.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cfdbb344.js",
+    "static/js/2.8571f745.chunk.js",
+    "static/js/main.082bafdb.chunk.js"
+  ]
+}
