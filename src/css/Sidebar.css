@@ -1,0 +1,7 @@
+.sidebar {
+	display: inline-block;
+	vertical-align: top;
+	height: 628px;
+    width: 250px;
+	overflow: auto;
+}
