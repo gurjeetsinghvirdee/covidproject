@@ -12,7 +12,7 @@ const Faqs = () => {
 
 
 
-            <div className="row" style={{ marginLeft: 250, marginTop: 50 }}>
+            <div className="row" id="faqs">
                 <div className="col-12">
                     <div className="card-body table-responsive">
                         <div className="card card-default">

@@ -6,7 +6,7 @@ const Sidebar = () => {
     return (
         <div class="wrapper">
             {/* Main Sidebar Container */}
-            <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <aside class="main-sidebar sidebar-dark-primary elevation-4" id="sidebar">
             <div class="brand-link">
                      <span class ="brand-text font-weight-light "><b><b>COVID 19 DETAILS</b></b></span>
                 </div>

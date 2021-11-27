@@ -88,7 +88,7 @@ class IndiaDashboard extends React.Component {
                                     </span>
                                 </h1>
                             </div>
-                            <div class="col-12 col-sm-4 col-md-2">
+                            <div class="col-12 col-sm-4 col-md-2" id="refreshData">
                                 <button type="button" class="btn btn-outline-primary" onClick={() => this.RefreshData()}>Refresh data</button>
                             </div>
 
