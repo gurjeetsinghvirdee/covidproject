@@ -38,4 +38,20 @@
 }
 
 
+#mainContent{
+  margin-left: 250px;
+  margin-top: 20px;
+}
 
+.sidebarLinks{
+  font-size: 17px;
+}
+
+.sidebarTabs{
+  font-size: 20px;
+}
+
+.contentHeader{
+  margin-left: 250px;
+  margin-top: 70px;
+}

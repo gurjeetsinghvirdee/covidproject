@@ -5,6 +5,7 @@ import Sidebar from "./Sidebar";
 
 import Countries from '../helper/Countries'
 
+import "../css/App.css";
 
 
 class CountriesDashboard extends React.Component {
@@ -60,7 +61,7 @@ class CountriesDashboard extends React.Component {
 
                 
                
-                <div class="content-header" style={{ marginLeft: "250px" , marginTop: "70px"}}>
+                <div class="content-header contentHeader" >
                     <div class="container-fluid">
                         <div class="row mb-2">
                             <div class="col-12 col-sm-8 col-md-10">
@@ -85,7 +86,7 @@ class CountriesDashboard extends React.Component {
                 </div>
 
                 <div class="wrapper">
-                    <div class="content-wrapper mt-0">
+                    <div class="content-wrapper " id="mainContent">
                         <section class="content">
                             <div class="container-fluid">
 

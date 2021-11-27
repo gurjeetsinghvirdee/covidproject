@@ -24,7 +24,7 @@ const Header = () => {
                             <i class="fas fa-expand-arrows-alt"></i>
                         </a>
                     </li>
-                   
+
 
                 </ul>
             </nav>
@@ -34,9 +34,10 @@ const Header = () => {
 
             {/* Main Footer */}
             <footer class="main-footer">
-                <strong>Copyright &copy; 2020-2021 <a href="https://nidhipal09.github.io/MyWebsite/">Nidhi pal</a>. </strong>
-                All rights reserved.
-                
+                <div class="float-right d-none d-sm-inline-block">
+                    <strong>Copyright &copy; 2020-2021 <a href="https://nidhipal09.github.io/MyWebsite/">Nidhi pal</a>.</strong>
+                    All rights reserved.
+                </div>
             </footer>
 
         </div>

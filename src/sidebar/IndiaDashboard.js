@@ -6,6 +6,8 @@ import Sidebar from "./Sidebar";
 import Countries from '../helper/Countries'
 import IndiaStates from '../helper/IndiaStates'
 
+import "../css/App.css";
+
 class IndiaDashboard extends React.Component {
     constructor(props) {
         super(props);
@@ -72,7 +74,7 @@ class IndiaDashboard extends React.Component {
                 <Header />
                 <Sidebar />
 
-                <div class="content-header mt-5" style={{ marginLeft: "250px" , marginTop: "70px"}}>
+                <div class="content-header contentHeader">
                     <div class="container-fluid">
                         <div class="row mb-2">
                             <div class="col-12 col-sm-8 col-md-10">
@@ -97,7 +99,7 @@ class IndiaDashboard extends React.Component {
                 </div>
 
                 <div class="wrapper">
-                    <div class="content-wrapper mt-0">
+                    <div class="content-wrapper"  id="mainContent">
                         <section class="content">
                             <div class="container-fluid">
 

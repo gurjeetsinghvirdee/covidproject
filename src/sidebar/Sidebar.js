@@ -1,12 +1,15 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
+import "../css/App.css";
 
 const Sidebar = () => {
     return (
         <div class="wrapper">
             {/* Main Sidebar Container */}
             <aside class="main-sidebar sidebar-dark-primary elevation-4">
-                <h3><span class="brand-text font-weight">Welcome</span></h3>
+            <div class="brand-link">
+                     <span class ="brand-text font-weight-light "><b><b>COVID 19 DETAILS</b></b></span>
+                </div>
 
                 {/* Sidebar */}
                 <div class="sidebar">
@@ -19,7 +22,7 @@ const Sidebar = () => {
                             <li class="nav-item menu-open">
                                 <a href="#" class="nav-link active">
                                     <i class="nav-icon"><img src="dist/img/4.ico"></img></i>
-                                    <p>
+                                    <p class="sidebarTabs">
                                         World cases
                                         <i class="right fas fa-angle-left"></i>
                                     </p>
@@ -28,14 +31,14 @@ const Sidebar = () => {
                                     <li class="nav-item">
                                         <div class="nav-link">
                                             <i class="fa fa-circle nav-icon"></i>
-                                            <Link to="/covidproject/"><p>Dashboard</p></Link>
+                                            <Link to="/covidproject/"><p  class="sidebarLinks">Dashboard</p></Link>
                                         </div>
                                     </li>
                                     <li class="nav-item">
 
                                     <a href="#" class="nav-link">
                                             <i class="fa fa-circle nav-icon"></i>
-                                            <Link to="/covidproject/CountriesTable"><p>Countries data</p></Link>
+                                            <Link to="/covidproject/CountriesTable"><p class="sidebarLinks">Countries data</p></Link>
                                         </a>
 
                                     </li>
@@ -46,7 +49,7 @@ const Sidebar = () => {
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon"><img src="dist/img/9.ico"></img></i>
-                                    <p>
+                                    <p class="sidebarTabs">
                                         India cases
                                         <i class="fas fa-angle-left right"></i>
 
@@ -56,19 +59,19 @@ const Sidebar = () => {
                                     <li class="nav-item">
                                     <a href="#" class="nav-link">
                                             <i class="fa fa-circle nav-icon"></i>
-                                            <Link to="/covidproject/IndiaDashboard"><p>Dashboard</p></Link>
+                                            <Link to="/covidproject/IndiaDashboard"><p class="sidebarLinks">Dashboard</p></Link>
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                     <a href="#" class="nav-link">
                                             <i class="fa fa-circle nav-icon"></i>
-                                            <Link to="/covidproject/StatesTable"><p>India data</p></Link>
+                                            <Link to="/covidproject/StatesTable"><p class="sidebarLinks">India data</p></Link>
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                     <a href="#" class="nav-link">
                                             <i class="fa fa-circle nav-icon"></i>
-                                            <Link to="/covidproject/StateDistrictsTable"><p>States data</p></Link>
+                                            <Link to="/covidproject/StateDistrictsTable"><p class="sidebarLinks">States data</p></Link>
                                         </a>
                                     </li>
 
@@ -78,7 +81,7 @@ const Sidebar = () => {
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon"><img src="dist/img/8.ico"></img></i>
-                                    <p>
+                                    <p class="sidebarTabs">
                                     <Link to="/covidproject/Faqs"><p>FAQs</p></Link>
 
                                     </p>
