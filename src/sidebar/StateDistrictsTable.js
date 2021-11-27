@@ -95,7 +95,7 @@ class StateDistrictsTable extends React.Component {
                                 <div class="row">
                                     <div class="col-12 col-sm-12 col-md-4">
                                         <div class="info-box mb-3">
-                                            <span class="info-box-icon bg-info elevation-1"><img src="../../dist/img/15.png" /></span>
+                                            <span class="info-box-icon bg-info elevation-1"><img src="dist/img/15.png" /></span>
                                             <div class="info-box-content">
                                                 <span style={{ fontWeight: "650" }} class="info-box-text">Enter State</span>
                                                 <input class="form-control" list="state" onChange={(value) => this.handleChange(value)} />
@@ -143,7 +143,7 @@ class StateDistrictsTable extends React.Component {
 
                                     <div class="col-12 col-sm-12 col-md-4">
                                         <div class="info-box mb-3">
-                                            <span class="info-box-icon bg-info elevation-1"><img src="../../dist/img/17.png" /></span>
+                                            <span class="info-box-icon bg-info elevation-1"><img src="dist/img/17.png" /></span>
                                             <div class="info-box-content">
                                                 <span style={{ fontWeight: "650" }} class="info-box-text">Click The Button</span>
                                                 <button type="button" class="btn btn-block btn-outline-info"

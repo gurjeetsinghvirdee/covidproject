@@ -37,13 +37,13 @@ const Faqs = () => {
                                         </div>
                                     </div>
                                     <div className="col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                                        <img src="../../dist/img/FAQ/1.png" className="img-rounded" />
+                                        <img src="dist/img/FAQ/1.png" className="img-rounded" />
                                         <hr></hr>
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                                        <img src="../../dist/img/FAQ/3.png" className="img-rounded" />
+                                        <img src="dist/img/FAQ/3.png" className="img-rounded" />
                                     </div>
                                     <div className="col-12 col-sm-8 col-md-9 col-lg-9 col-xl-10">
                                         <div className="callout callout-info">
@@ -73,16 +73,16 @@ const Faqs = () => {
                                         </div>
                                     </div>
                                     <div className="col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                                        <img src="../../dist/img/FAQ/4.png" className="img-rounded" />
+                                        <img src="dist/img/FAQ/4.png" className="img-rounded" />
                                         <hr></hr>
-                                        <img src="../../dist/img/FAQ/5.png" className="img-rounded" />
+                                        <img src="dist/img/FAQ/5.png" className="img-rounded" />
                                     </div>
                                 </div>
 
                                 <div className="row">
                                     <div className="col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                                        <img src="../../dist/img/FAQ/6.png" className="img-rounded" />
-                                        <img src="../../dist/img/FAQ/7.png" />
+                                        <img src="dist/img/FAQ/6.png" className="img-rounded" />
+                                        <img src="dist/img/FAQ/7.png" />
                                     </div>
                                     <div className="col-12 col-sm-8 col-md-9 col-lg-9 col-xl-10">
                                         <div className="callout callout-success">
@@ -113,13 +113,13 @@ const Faqs = () => {
                                         </div>
                                     </div>
                                     <div className="col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                                        <img src="../../dist/img/FAQ/8.png" className="img-rounded" />
+                                        <img src="dist/img/FAQ/8.png" className="img-rounded" />
                                     </div>
                                 </div>
 
                                 <div className="row">
                                     <div className="col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                                        <img src="../../dist/img/FAQ/10.png" className="img-rounded" />
+                                        <img src="dist/img/FAQ/10.png" className="img-rounded" />
                                     </div>
                                     <div className="col-12 col-sm-8 col-md-9 col-lg-9 col-xl-10">
                                         <div className="callout callout-warning">
@@ -149,14 +149,14 @@ const Faqs = () => {
                                         </div>
                                     </div>
                                     <div className="col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                                        <img src="../../dist/img/FAQ/9.png" className="img-rounded" />
+                                        <img src="dist/img/FAQ/9.png" className="img-rounded" />
                                     </div>
                                 </div>
 
                                 <div className="row">
                                     <div className="col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                                        <img src="../../dist/img/FAQ/11.png" className="img-rounded" />
-                                        <img src="../../dist/img/FAQ/12.png" className="img-rounded" />
+                                        <img src="dist/img/FAQ/11.png" className="img-rounded" />
+                                        <img src="dist/img/FAQ/12.png" className="img-rounded" />
                                     </div>
                                     <div className="col-12 col-sm-8 col-md-9 col-lg-9 col-xl-10">
                                         <div className="callout callout-success">
@@ -197,14 +197,14 @@ const Faqs = () => {
                                         </div>
                                     </div>
                                     <div className="col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                                        <img src="../../dist/img/FAQ/13.png" className="img-rounded" />
-                                        <img src="../../dist/img/FAQ/14.png" className="img-rounded" />
+                                        <img src="dist/img/FAQ/13.png" className="img-rounded" />
+                                        <img src="dist/img/FAQ/14.png" className="img-rounded" />
                                     </div>
                                 </div>
 
                                 <div className="row">
                                     <div className="col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                                        <img src="../../dist/img/FAQ/15.png" className="img-rounded" />
+                                        <img src="dist/img/FAQ/15.png" className="img-rounded" />
                                     </div>
                                     <div className="col-12 col-sm-8 col-md-9 col-lg-9 col-xl-10">
                                         <div className="callout callout-info">
@@ -234,13 +234,13 @@ const Faqs = () => {
                                         </div>
                                     </div>
                                     <div className="col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                                        <img src="../../dist/img/FAQ/16.png" className="img-rounded" />
+                                        <img src="dist/img/FAQ/16.png" className="img-rounded" />
                                     </div>
                                 </div>
 
                                 <div className="row">
                                     <div className="col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                                        <img src="../../dist/img/FAQ/17.png" className="img-rounded" />
+                                        <img src="dist/img/FAQ/17.png" className="img-rounded" />
                                     </div>
                                     <div className="col-12 col-sm-8 col-md-9 col-lg-9 col-xl-10">
                                         <div className="callout callout-success">
@@ -273,14 +273,14 @@ const Faqs = () => {
                                         </div>
                                     </div>
                                     <div className="col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                                        <img src="../../dist/img/FAQ/15.png" className="img-rounded" />
+                                        <img src="dist/img/FAQ/15.png" className="img-rounded" />
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                                        <img src="../../dist/img/FAQ/19.png" className="img-rounded" />
+                                        <img src="dist/img/FAQ/19.png" className="img-rounded" />
                                         <hr></hr>
-                                        <img src="../../dist/img/FAQ/18.png" className="img-rounded" />
+                                        <img src="dist/img/FAQ/18.png" className="img-rounded" />
                                     </div>
                                     <div className="col-12 col-sm-8 col-md-9 col-lg-9 col-xl-10">
                                         <div className="callout callout-info">
@@ -314,13 +314,13 @@ const Faqs = () => {
                                         </div>
                                     </div>
                                     <div className="col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                                        <img src="../../dist/img/FAQ/15.png" className="img-rounded" />
+                                        <img src="dist/img/FAQ/15.png" className="img-rounded" />
                                     </div>
                                 </div>
 
                                 <div className="row">
                                     <div className="col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                                        <img src="../../dist/img/FAQ/20.png" className="img-rounded" />
+                                        <img src="dist/img/FAQ/20.png" className="img-rounded" />
                                     </div>
                                     <div className="col-12 col-sm-8 col-md-9 col-lg-9 col-xl-10">
                                         <div className="callout callout-success">
@@ -347,7 +347,7 @@ const Faqs = () => {
                                         </div>
                                     </div>
                                     <div className="col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                                        <img src="../../dist/img/FAQ/6.png" className="img-rounded" />
+                                        <img src="dist/img/FAQ/6.png" className="img-rounded" />
                                     </div>
                                 </div>
                             </div>
