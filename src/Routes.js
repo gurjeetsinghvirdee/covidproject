@@ -15,11 +15,11 @@ const Routes =()=> {
             <Switch>
                 <Route exact path="/covidproject/" component={CountriesDashboard}></Route>
                 {/* <Route path="/CountriesDashboard" exact component={CountriesDashboard}></Route> */}
-                <Route path="/covidproject/CountriesTable" exact component={CountriesTable}></Route>
-                <Route path="/covidproject/IndiaDashboard" exact component={IndiaDashboard}></Route>
-                <Route path="/covidproject/StatesTable" exact component={StatesTable}></Route>
-                <Route path="/covidproject/StateDistrictsTable" exact component={StateDistrictsTable}></Route>
-                <Route path="/covidproject/Faqs" exact component={Faqs}></Route>
+                <Route exact path="/covidproject/CountriesTable" component={CountriesTable}></Route>
+                <Route exact path="/covidproject/IndiaDashboard" component={IndiaDashboard}></Route>
+                <Route exact path="/covidproject/StatesTable" component={StatesTable}></Route>
+                <Route exact path="/covidproject/StateDistrictsTable" component={StateDistrictsTable}></Route>
+                <Route exact path="/covidproject/Faqs" component={Faqs}></Route>
                 
             </Switch>
         </Router>
