@@ -19,7 +19,7 @@ const Faqs = () => {
                             <div className="card-header">
                                 <h1 className="card-title">
                                     <i className="fas fa-bullhorn"></i>&nbsp;
-                                    FAQs
+                                    Frequently asked questions
                                 </h1>
                             </div>
                             {/* /.card-header */}

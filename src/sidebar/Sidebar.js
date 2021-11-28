@@ -46,7 +46,7 @@ const Sidebar = () => {
                                 </ul>
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item menu-open">
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon"><img src="dist/img/9.ico"></img></i>
                                     <p class="sidebarTabs">
@@ -78,7 +78,7 @@ const Sidebar = () => {
                                 </ul>
                             </li>
 
-                            <li class="nav-item">
+                            <li class="nav-item menu-open">
                                 <a href="#" class="nav-link">
                                     <i class="nav-icon"><img src="dist/img/8.ico"></img></i>
                                     <p class="sidebarTabs">
