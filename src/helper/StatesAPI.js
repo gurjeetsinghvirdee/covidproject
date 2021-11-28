@@ -4,7 +4,10 @@ const StatesAPI = () => {
     return (
         {
             "Andaman and Nicobar Islands" : [
-                "Andaman and Nicobar Islands"
+                "Nicobars",
+                "North and Middle Andaman",
+                "South Andaman"
+
             ],
 
             "Andhra Pradesh": [
