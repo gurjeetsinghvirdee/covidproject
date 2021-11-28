@@ -161,7 +161,8 @@ const StatesAPI = () => {
             
 
             "Ladakh" : [
-                "Ladakh"
+                "Kargil",
+                "Leh"
             ],
 
             "Dadra and Nagar Haveli and Daman and Diu" : [
