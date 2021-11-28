@@ -37,61 +37,63 @@
   }
 }
 
-@media only screen and ( max-width: 360px ) {
-  .contentHeader{
-    margin-left : -3px;
-    margin-top: 52px;
-  }
+@media only screen and (max-width: 360px) {
+      .contentHeader{
+        margin-left : -3px;
+        margin-top: 52px;
+      }
 
-  #refreshData{
-    margin-left : 2px;
-    margin-top: 12px;
-  }
+      #refreshData{
+        margin-left : 2px;
+        margin-top: 12px;
+      }
 
-  #mainContent{
-    margin-left: -3px;
-    margin-top: 13px;
-  }
-  
-  .sidebarLinks{
-    font-size: 17px;
-  }
-  
-  .sidebarTabs{
-    font-size: 20px;
-  }    
+      #mainContent{
+        margin-left: -3px;
+        margin-top: 13px;
+      }
+      
+      .sidebarLinks{
+        font-size: 17px;
+      }
+      
+      .sidebarTabs{
+        font-size: 20px;
+      }    
 
-  #sidebar{
-    width: 70%;
-    height: 100%;
-  }
+      #sidebar{
+        width: 70%;
+        height: 100%;
+      }
 
 }
 
+@media only screen and (max-width: 1370px) {
+        #mainContent{
+          margin-left: 250px;
+          margin-top: 20px;
+        }
 
-#mainContent{
-  margin-left: 250px;
-  margin-top: 20px;
-}
+        .sidebarLinks{
+          font-size: 17px;
+        }
 
-.sidebarLinks{
-  font-size: 17px;
-}
+        .sidebarTabs{
+          font-size: 20px;
+        }
 
-.sidebarTabs{
-  font-size: 20px;
-}
+        .contentHeader{
+          margin-left: 250px;
+          margin-top: 70px;
+        }
 
-.contentHeader{
-  margin-left: 250px;
-  margin-top: 70px;
-}
+        #faqs{
+          margin-left: 250px;
+          margin-top: 50px;
+        }
 
-#faqs{
-  margin-left: 250px;
-  margin-top: 50px;
-}
+        #sidebar{
+          height: 100%;
+        }
 
-#sidebar{
-  height: 100%;
 }
