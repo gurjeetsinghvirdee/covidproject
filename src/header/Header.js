@@ -32,9 +32,8 @@ const Header = () => {
 
             {/* Main Footer */}
             <footer class="main-footer">
-                <div class="float-right d-none d-sm-inline-block">
+                <div class="float-right d-block">
                     <strong>Copyright &copy; 2020-2021 <a href="https://nidhipal09.github.io/MyWebsite/">Nidhi pal</a>.</strong>
-                    All rights reserved.
                 </div>
             </footer>
 

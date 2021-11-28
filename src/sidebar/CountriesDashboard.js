@@ -18,10 +18,8 @@ class CountriesDashboard extends React.Component {
 
         totalConfirmed: "",
         totalDeaths: "",
-        totalRecovered: "",
         newConfirmed: "",
         newDeaths: "",
-        newRecovered: "",
 
         date: [],
         time: "",
@@ -38,10 +36,8 @@ class CountriesDashboard extends React.Component {
             this.setState({ CountriesData: result.Countries })
             this.setState({ totalConfirmed: result.Global.TotalConfirmed })
             this.setState({ totalDeaths: result.Global.TotalDeaths })
-            this.setState({ totalRecovered: result.Global.TotalRecovered })
             this.setState({ newConfirmed: result.Global.NewConfirmed })
             this.setState({ newDeaths: result.Global.NewDeaths })
-            this.setState({ newRecovered: result.Global.NewRecovered })
             this.setState({ date: (result.Global.Date).split("T")[0] })
             this.setState({ time: (result.Global.Date).split("T")[1].split(".")[0] })
 
@@ -93,7 +89,7 @@ class CountriesDashboard extends React.Component {
 
                                 {/* Info boxes */}
                                 <div class="row">
-                                    <div class="col-12 col-sm-6 col-md-4">
+                                    <div class="col-12 col-sm-6 col-md-3">
                                         <div class="info-box">
                                             <span class="info-box-icon bg-info elevation-1"><img src="dist/img/1.png" alt="no"></img></span>
 
@@ -106,8 +102,8 @@ class CountriesDashboard extends React.Component {
                                         {/* /.info-box */}
                                     </div>
                                     {/* /.col */}
-                                    <div class="col-12 col-sm-6 col-md-4">
-                                        <div class="info-box mb-3">
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <div class="info-box">
                                             <span class="info-box-icon bg-danger elevation-1"><img src="dist/img/2.png" alt="no"></img></span>
 
                                             <div class="info-box-content">
@@ -120,29 +116,41 @@ class CountriesDashboard extends React.Component {
                                     </div>
                                     {/* /.col */}
 
-                                    {/* fix for small devices only */}
-                                    <div class="clearfix hidden-md-up"></div>
-
-                                    <div class="col-12 col-sm-6 col-md-4">
-                                        <div class="info-box mb-3">
-                                            <span class="info-box-icon bg-success elevation-1"><img src="dist/img/3.png" alt="no"></img></span>
+                                    <div class="col-12 col-sm-6 col-md-3  ">
+                                        <div class="info-box bg-info">
+                                            <span class="info-box-icon"><img src="dist/img/1.png" alt="no"></img></span>
 
                                             <div class="info-box-content">
-                                                <span class="info-box-text">Total recovered</span>
-                                                <h4 class="info-box-number"><span class="right badge badge-success">{this.state.totalRecovered}</span></h4>
+                                                <span class="info-box-text">New confirmed</span>
+                                                <span class="info-box-number">{this.state.newConfirmed}</span>
                                             </div>
                                             {/* /.info-box-content */}
                                         </div>
-                                        {/* /.info-box */}
                                     </div>
-                                    {/* /.col */}
+                                    {/* /.info-box */}
+                                    <div class="col-12 col-sm-6 col-md-3  " >
+                                        <div class=" info-box bg-danger">
+                                            <span class="info-box-icon"><img src="dist/img/2.png" alt="no"></img></span>
+
+                                            <div class="info-box-content">
+                                                <span class="info-box-text">New deaths</span>
+                                                <span class="info-box-number">{this.state.newDeaths}</span>
+                                            </div>
+                                            {/* /.info-box-content */}
+                                        </div>
+                                    </div>
+                                    {/* /.info-box */}
+
+
+                                    {/* fix for small devices only */}
+                                    <div class="clearfix hidden-md-up"></div>
 
                                 </div>
                                 {/* /.row */}
 
-                                <div class="row">
+                                <div class="row" >
                                     {/* Left col */}
-                                    <div class="col-md-8">
+                                    <div class="col-md-12">
 
                                         {/* TABLE: LATEST ORDERS */}
                                         <div class="card">
@@ -167,25 +175,29 @@ class CountriesDashboard extends React.Component {
                                                                 <th>Country</th>
                                                                 <th>Total confirmed</th>
                                                                 <th>Total deaths</th>
-                                                                <th>Total recovered</th>
+                                                                <th>New confirmed</th>
+                                                                <th>New deaths</th>
                                                             </tr>
                                                             <tr>
                                                                 <td>{this.state.c1.Country}</td>
                                                                 <td>{this.state.c1.TotalConfirmed}</td>
                                                                 <td>{this.state.c1.TotalDeaths}</td>
-                                                                <td>{this.state.c1.TotalRecovered}</td>   
+                                                                <td>{this.state.c1.NewConfirmed}</td>
+                                                                <td>{this.state.c1.NewDeaths}</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>{this.state.c2.Country}</td>
                                                                 <td>{this.state.c2.TotalConfirmed}</td>
                                                                 <td>{this.state.c2.TotalDeaths}</td>
-                                                                <td>{this.state.c2.TotalRecovered}</td>   
+                                                                <td>{this.state.c2.NewConfirmed}</td>
+                                                                <td>{this.state.c2.NewDeaths}</td>
                                                             </tr>
                                                             <tr>
                                                                 <td>{this.state.c3.Country}</td>
                                                                 <td>{this.state.c3.TotalConfirmed}</td>
                                                                 <td>{this.state.c3.TotalDeaths}</td>
-                                                                <td>{this.state.c3.TotalRecovered}</td>   
+                                                                <td>{this.state.c3.NewConfirmed}</td>
+                                                                <td>{this.state.c3.NewDeaths}</td>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
@@ -197,7 +209,7 @@ class CountriesDashboard extends React.Component {
                                             </div>
                                             {/* /.card-body */}
                                             <div class="card-footer clearfix">
-                                                <Link to="/covidproject/CountriesTable"><button class="btn btn-sm btn-secondary float-right">View all countries data</button></Link>
+                                                <Link to="/CountriesTable"><button class="btn btn-sm btn-secondary float-right">View all countries data</button></Link>
                                             </div>
                                             {/* /.card-footer */}
                                         </div>
@@ -205,40 +217,7 @@ class CountriesDashboard extends React.Component {
 
                                     </div>
 
-                                    <div class="col-md-4">
-                                        {/* Info Boxes Style 2 */}
-                                        <div class="info-box mb-3 bg-info">
-                                            <span class="info-box-icon"><img src="dist/img/1.png" alt="no"></img></span>
 
-                                            <div class="info-box-content">
-                                                <span class="info-box-text">New confirmed</span>
-                                                <span class="info-box-number">{this.state.newConfirmed}</span>
-                                            </div>
-                                            {/* /.info-box-content */}
-                                        </div>
-                                        {/* /.info-box */}
-                                        <div class="info-box mb-3 bg-danger">
-                                            <span class="info-box-icon"><img src="dist/img/2.png" alt="no"></img></span>
-
-                                            <div class="info-box-content">
-                                                <span class="info-box-text">New deaths</span>
-                                                <span class="info-box-number">{this.state.newDeaths}</span>
-                                            </div>
-                                            {/* /.info-box-content */}
-                                        </div>
-                                        {/* /.info-box */}
-                                        <div class="info-box mb-3 bg-success">
-                                            <span class="info-box-icon"><img src="dist/img/3.png" alt="no"></img></span>
-
-                                            <div class="info-box-content">
-                                                <span class="info-box-text">New recovered</span>
-                                                <span class="info-box-number">{this.state.newRecovered}</span>
-                                            </div>
-                                            {/* /.info-box-content */}
-                                        </div>
-                                        {/* /.info-box */}
-
-                                    </div>
                                 </div>
                             </div>
                         </section>

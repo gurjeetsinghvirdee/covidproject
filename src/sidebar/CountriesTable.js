@@ -82,16 +82,18 @@ export default class CountriesTable extends React.Component {
                                                             <th>Country</th>
                                                             <th>Total confirmed</th>
                                                             <th>Total deaths</th>
-                                                            <th>Total recovered</th>
+                                                            <th>New confirmed</th>
+                                                            <th>New deaths</th>
                                                         </tr>
                                                         {
                                                             this.state.summary ?
                                                                 this.state.summary.map((Country) =>
                                                                     <tr>
-                                                                        <td>{Country.Slug}</td>
+                                                                        <td>{Country.Country}</td>
                                                                         <td>{Country.TotalConfirmed}</td>
                                                                         <td>{Country.TotalDeaths}</td>
-                                                                        <td>{Country.TotalRecovered}</td>
+                                                                        <td>{Country.NewConfirmed}</td>
+                                                                        <td>{Country.NewDeaths}</td>
                                                                     </tr>
 
                                                                 )
