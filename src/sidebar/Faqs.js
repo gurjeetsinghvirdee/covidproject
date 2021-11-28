@@ -15,7 +15,7 @@ const Faqs = () => {
                         <section class="content" >
                             <div class="container-fluid">
 
-                                <div className="row" id="faqs">
+                                <div className="row">
                                     <div className="col-12">
                                         <div className="card-body table-responsive">
                                             <div className="card card-default">
