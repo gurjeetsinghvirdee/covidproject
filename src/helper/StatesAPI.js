@@ -6,7 +6,8 @@ const StatesAPI = () => {
             "Andaman and Nicobar Islands" : [
                 "Nicobars",
                 "North and Middle Andaman",
-                "South Andaman"
+                "South Andaman",
+                "Unknown"
 
             ],
 
@@ -373,16 +374,7 @@ const StatesAPI = () => {
             ],
 
             "Lakshadweep": [
-                "Agatti",
-                "Amini",
-                "Androth",
-                "Bithra",
-                "Chethlath",
-                "Kavaratti",
-                "Kadmath",
-                "Kalpeni",
-                "Kilthan",
-                "Minicoy"
+                "Lakshadweep"
             ],
 
             "Madhya Pradesh": [
