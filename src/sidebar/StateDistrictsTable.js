@@ -114,6 +114,7 @@ class StateDistrictsTable extends React.Component {
                                                     <option>Chandigarh</option>
                                                     <option>Chhattisgarh</option>
                                                     <option>Delhi</option>
+                                                    <option>Dadra and Nagar Haveli and Daman and Diu</option>
                                                     <option>Goa</option>
                                                     <option>Gujarat</option>
                                                     <option>Himachal Pradesh</option>

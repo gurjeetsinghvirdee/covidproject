@@ -3,6 +3,10 @@ const StatesAPI = () => {
     
     return (
         {
+            "Andaman and Nicobar Islands" : [
+                "Andaman and Nicobar Islands"
+            ],
+
             "Andhra Pradesh": [
                 "Anantapur",
                 "Chittoor",
@@ -154,16 +158,20 @@ const StatesAPI = () => {
                 "Surguja"
             ],
 
-            "Dadra and Nagar Haveli": [
-                "Dadra & Nagar Haveli"
+            
+
+            "Ladakh" : [
+                "Ladakh"
             ],
 
-            "Daman and Diu": [
-                "Daman",
-                "Diu"
+            "Dadra and Nagar Haveli and Daman and Diu" : [
+                 "Dadra and Nagar Haveli",
+                 "Daman",
+                 "Diu",
+
             ],
 
-            "Delhi (NCT)": [
+            "Delhi": [
                 "Central Delhi",
                 "East Delhi",
                 "New Delhi",
