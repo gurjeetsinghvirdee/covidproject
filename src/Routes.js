@@ -14,7 +14,6 @@ const Routes =()=> {
         <Router>
             <Switch>
                 <Route exact path="/covidproject/" component={CountriesDashboard}></Route>
-                {/* <Route path="/CountriesDashboard" exact component={CountriesDashboard}></Route> */}
                 <Route exact path="/covidproject/CountriesTable" component={CountriesTable}></Route>
                 <Route exact path="/covidproject/IndiaDashboard" component={IndiaDashboard}></Route>
                 <Route exact path="/covidproject/StatesTable" component={StatesTable}></Route>

@@ -33,28 +33,28 @@ class IndiaDashboard extends React.Component {
         this.setState({ refresh: true })
     }
     componentDidMount() {
-            this.setState({
-                totalConfirmed: IndiaStates().statewise[0].confirmed,
-                totalDeaths: IndiaStates().statewise[0].deaths,
-                totalRecovered: IndiaStates().statewise[0].recovered,
-                newConfirmed: IndiaStates().statewise[0].deltaconfirmed,
-                newDeaths: IndiaStates().statewise[0].deltadeaths,
-                newRecovered: IndiaStates().statewise[0].deltarecovered,
+        this.setState({
+            totalConfirmed: IndiaStates().statewise[0].confirmed,
+            totalDeaths: IndiaStates().statewise[0].deaths,
+            totalRecovered: IndiaStates().statewise[0].recovered,
+            newConfirmed: IndiaStates().statewise[0].deltaconfirmed,
+            newDeaths: IndiaStates().statewise[0].deltadeaths,
+            newRecovered: IndiaStates().statewise[0].deltarecovered,
 
-                s1n: IndiaStates().statewise[4].state, s1c: IndiaStates().statewise[4].confirmed,
-                s1d: IndiaStates().statewise[4].deaths, s1r: IndiaStates().statewise[4].recovered,
+            s1n: IndiaStates().statewise[4].state, s1c: IndiaStates().statewise[4].confirmed,
+            s1d: IndiaStates().statewise[4].deaths, s1r: IndiaStates().statewise[4].recovered,
 
-                s2n: IndiaStates().statewise[14].state, s2c: IndiaStates().statewise[14].confirmed,
-                s2d: IndiaStates().statewise[14].deaths, s2r: IndiaStates().statewise[14].recovered,
+            s2n: IndiaStates().statewise[14].state, s2c: IndiaStates().statewise[14].confirmed,
+            s2d: IndiaStates().statewise[14].deaths, s2r: IndiaStates().statewise[14].recovered,
 
-                s3n: IndiaStates().statewise[27].state, s3c: IndiaStates().statewise[27].confirmed,
-                s3d: IndiaStates().statewise[27].deaths, s3r: IndiaStates().statewise[27].recovered,
+            s3n: IndiaStates().statewise[27].state, s3c: IndiaStates().statewise[27].confirmed,
+            s3d: IndiaStates().statewise[27].deaths, s3r: IndiaStates().statewise[27].recovered,
 
-                date: (IndiaStates().statewise[0].lastupdatedtime).split(" ")[0],
-                time: (IndiaStates().statewise[0].lastupdatedtime).split(" ")[1]
+            date: (IndiaStates().statewise[0].lastupdatedtime).split(" ")[0],
+            time: (IndiaStates().statewise[0].lastupdatedtime).split(" ")[1]
 
-            })
-        
+        })
+
     }
 
     render() {
@@ -63,37 +63,36 @@ class IndiaDashboard extends React.Component {
                 <Header />
                 <Sidebar />
 
-                
+
 
                 <div class="wrapper">
-                    <div class="content-header contentHeader">
-                        <div class="container-fluid">
-                            <div class="row mb-2">
-                                <div class="col-12 col-sm-8 col-md-10">
-                                    <h1 class="m-0">Data is refreshed on &nbsp;
-                                        <span class="right badge badge-primary">
-                                            {this.state.date}
-                                        </span>
-                                        &nbsp; at &nbsp;
-                                        <span class="right badge badge-primary">
-                                            {this.state.time}
-                                        </span>
-                                    </h1>
-                                </div>
-                                <div class="col-12 col-sm-4 col-md-2" id="refreshData">
-                                    <button type="button" class="btn btn-outline-primary" onClick={() => this.RefreshData()}>Refresh data</button>
-                                </div>
-
-                            </div>
-                            {/* /.row */}
-                        </div>
-                        {/* /.container-fluid */}
-                    </div>
-
-                    <div class="content-wrapper"  id="mainContent">
+                    <div class="content-wrapper" >
                         <section class="content">
                             <div class="container-fluid">
 
+                                <div class="content-header ">
+                                    <div class="container-fluid">
+                                        <div class="row mb-2">
+                                            <div class="col-12 col-sm-8 col-md-10">
+                                                <h1 class="m-0">Data is refreshed on &nbsp;
+                                                    <span class="right badge badge-primary">
+                                                        {this.state.date}
+                                                    </span>
+                                                    &nbsp; at &nbsp;
+                                                    <span class="right badge badge-primary">
+                                                        {this.state.time}
+                                                    </span>
+                                                </h1>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-2" id="refreshData">
+                                                <button type="button" class="btn btn-outline-primary" onClick={() => this.RefreshData()}>Refresh data</button>
+                                            </div>
+
+                                        </div>
+                                        {/* /.row */}
+                                    </div>
+                                    {/* /.container-fluid */}
+                                </div>
 
                                 {/* Info boxes */}
                                 <div class="row">

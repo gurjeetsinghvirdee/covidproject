@@ -14,7 +14,7 @@ class CountriesDashboard extends React.Component {
 
     }
     state = {
-        c1: [], c2:[], c3:[],  
+        c1: [], c2: [], c3: [],
 
         totalConfirmed: "",
         totalDeaths: "",
@@ -41,7 +41,7 @@ class CountriesDashboard extends React.Component {
             this.setState({ date: (result.Global.Date).split("T")[0] })
             this.setState({ time: (result.Global.Date).split("T")[1].split(".")[0] })
 
-            this.setState({c1: result.Countries[8], c2:result.Countries[23], c3:result.Countries[34]})
+            this.setState({ c1: result.Countries[8], c2: result.Countries[23], c3: result.Countries[34] })
             console.log(this.state.c1)
 
         })
@@ -55,34 +55,33 @@ class CountriesDashboard extends React.Component {
 
                 <div class="wrapper">
 
-                    <div class="content-header contentHeader" >
-                        <div class="container-fluid">
-                            <div class="row mb-2">
-                                <div class="col-12 col-sm-8 col-md-10">
-                                    <h1 class="m-0">Data is refreshed on &nbsp;
-                                        <span class="right badge badge-primary">
-                                            {this.state.date}
-                                        </span>
-                                        &nbsp; at &nbsp;
-                                        <span class="right badge badge-primary">
-                                            {this.state.time}
-                                        </span>
-                                    </h1>
-                                </div>
-                                <div class="col-12 col-sm-4 col-md-2" id="refreshData">
-                                    <button type="button" class="btn btn-outline-primary" onClick={() => this.RefreshData()}>Refresh data</button>
-                                </div>
-
-                            </div>
-                            {/* /.row */}
-                        </div>
-                        {/* /.container-fluid */}
-                    </div>
-
-                    <div class="content-wrapper " id="mainContent">
+                    <div class="content-wrapper ">
                         <section class="content">
                             <div class="container-fluid">
 
+                                <div class="content-header " >
+                                    <div class="container-fluid">
+                                        <div class="row mb-2">
+                                            <div class="col-12 col-sm-8 col-md-10">
+                                                <h1 class="m-0">Data is refreshed on &nbsp;
+                                                    <span class="right badge badge-primary">
+                                                        {this.state.date}
+                                                    </span>
+                                                    &nbsp; at &nbsp;
+                                                    <span class="right badge badge-primary">
+                                                        {this.state.time}
+                                                    </span>
+                                                </h1>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-2" id="refreshData">
+                                                <button type="button" class="btn btn-outline-primary" onClick={() => this.RefreshData()}>Refresh data</button>
+                                            </div>
+
+                                        </div>
+                                        {/* /.row */}
+                                    </div>
+                                    {/* /.container-fluid */}
+                                </div>
 
                                 {/* Info boxes */}
                                 <div class="row">
@@ -206,7 +205,7 @@ class CountriesDashboard extends React.Component {
                                             </div>
                                             {/* /.card-body */}
                                             <div class="card-footer clearfix">
-                                                <Link to="/CountriesTable"><button class="btn btn-sm btn-secondary float-right">View all countries data</button></Link>
+                                                <Link to="/covidproject/CountriesTable"><button class="btn btn-sm btn-secondary float-right">View all countries data</button></Link>
                                             </div>
                                             {/* /.card-footer */}
                                         </div>
@@ -216,6 +215,7 @@ class CountriesDashboard extends React.Component {
 
 
                                 </div>
+                                
                             </div>
                         </section>
                     </div>

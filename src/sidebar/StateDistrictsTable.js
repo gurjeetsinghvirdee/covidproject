@@ -23,14 +23,14 @@ class StateDistrictsTable extends React.Component {
         selectedState: "",
         districts: [],
         selectedDistrict: "",
-       
+
         date: "",
         time: "",
 
         refresh: false
     };
 
-    RefreshData(){
+    RefreshData() {
         this.setState({ refresh: true })
     }
 
@@ -42,9 +42,10 @@ class StateDistrictsTable extends React.Component {
     getDistricts() {
         this.setState({ districts: StatesAPI()[this.state.selectedState] })
     }
-    
-    getDistrictData(val){
-        this.setState({selectedDistrict: val.dist,
+
+    getDistrictData(val) {
+        this.setState({
+            selectedDistrict: val.dist,
             totalConfirmed: Districts()[this.state.selectedState]["districtData"][val.dist]["confirmed"],
             totalDeaths: Districts()[this.state.selectedState]["districtData"][val.dist]["deceased"],
             totalRecovered: Districts()[this.state.selectedState]["districtData"][val.dist]["recovered"]
@@ -53,47 +54,48 @@ class StateDistrictsTable extends React.Component {
 
         this.setState({ date: (IndiaStates().statewise[0].lastupdatedtime).split(" ")[0] })
         this.setState({ time: (IndiaStates().statewise[0].lastupdatedtime).split(" ")[1] })
-        
-        
+
+
     }
-   
+
 
     render() {
         return (
             <>
                 <Header />
                 <Sidebar />
-                
+
 
                 <div class="wrapper">
-                    <div class="content-header contentHeader" >
-                        <div class="container-fluid">
-                            <div class="row mb-2">
-                                <div class="col-12 col-sm-8 col-md-10">
-                                    <h1 class="m-0">Data is refreshed on &nbsp;
-                                        <span class="right badge badge-primary">
-                                            {this.state.date}
-                                        </span>
-                                        &nbsp; at &nbsp;
-                                        <span class="right badge badge-primary">
-                                            {this.state.time}
-                                        </span>
-                                    </h1>
-                                </div>
-                                <div class="col-12 col-sm-4 col-md-2" id="refreshData">
-                                    <button type="button" class="btn btn-outline-primary" onClick={() =>this.RefreshData()}>Refresh data</button>
-                                </div>
 
-                            </div>
-                            {/* /.row */}
-                        </div>
-                        {/* /.container-fluid */}
-                    </div>
 
-                    <div class="content-wrapper" id="mainContent">
+                    <div class="content-wrapper">
                         <section class="content">
                             <div class="container-fluid">
 
+                                <div class="content-header " >
+                                    <div class="container-fluid">
+                                        <div class="row mb-2">
+                                            <div class="col-12 col-sm-8 col-md-10">
+                                                <h1 class="m-0">Data is refreshed on &nbsp;
+                                                    <span class="right badge badge-primary">
+                                                        {this.state.date}
+                                                    </span>
+                                                    &nbsp; at &nbsp;
+                                                    <span class="right badge badge-primary">
+                                                        {this.state.time}
+                                                    </span>
+                                                </h1>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-2" id="refreshData">
+                                                <button type="button" class="btn btn-outline-primary" onClick={() => this.RefreshData()}>Refresh data</button>
+                                            </div>
+
+                                        </div>
+                                        {/* /.row */}
+                                    </div>
+                                    {/* /.container-fluid */}
+                                </div>
 
                                 {/* Info boxes */}
                                 <div class="row">
@@ -163,7 +165,7 @@ class StateDistrictsTable extends React.Component {
                                                 {this.state.selectedState}
                                             </span>&nbsp;/  &nbsp;
                                             <span class="right badge badge-secondary">
-                                                 {this.state.selectedDistrict}
+                                                {this.state.selectedDistrict}
                                             </span>
                                         </h2>
                                     </div>
@@ -193,8 +195,8 @@ class StateDistrictsTable extends React.Component {
 
                                                             {this.state.districts.map(dist => (
                                                                 <tr>
-                                                                    <td onClick={() => this.getDistrictData({dist})}>{dist}</td>
-                                                                    
+                                                                    <td onClick={() => this.getDistrictData({ dist })}>{dist}</td>
+
                                                                 </tr>
                                                             ))}
                                                         </tbody>

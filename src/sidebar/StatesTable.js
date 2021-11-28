@@ -40,36 +40,38 @@ export default class StatesTable extends React.Component {
             <>
                 <Header />
                 <Sidebar />
-                
+
 
                 <div class="wrapper" >
-                    <div class="content-header contentHeader" >
-                        <div class="container-fluid">
-                            <div class="row mb-2">
-                                <div class="col-12 col-sm-8 col-md-10">
-                                    <h1 class="m-0">Data is refreshed on &nbsp;
-                                        <span class="right badge badge-primary">
-                                            {this.state.date}
-                                        </span>
-                                        &nbsp; at &nbsp;
-                                        <span class="right badge badge-primary">
-                                            {this.state.time}
-                                        </span>
-                                    </h1>
-                                </div>
-                                <div class="col-12 col-sm-4 col-md-2" id="refreshData">
-                                    <button type="button" class="btn btn-outline-primary" onClick={() => this.RefreshData()}>Refresh data</button>
-                                </div>
 
-                            </div>
-                            {/* /.row */}
-                        </div>
-                        {/* /.container-fluid */}
-                    </div>
 
-                    <div class="content-wrapper " id="mainContent">
+                    <div class="content-wrapper " >
                         <section class="content" >
                             <div class="container-fluid">
+
+                                <div class="content-header " >
+                                    <div class="container-fluid">
+                                        <div class="row mb-2">
+                                            <div class="col-12 col-sm-8 col-md-10">
+                                                <h1 class="m-0">Data is refreshed on &nbsp;
+                                                    <span class="right badge badge-primary">
+                                                        {this.state.date}
+                                                    </span>
+                                                    &nbsp; at &nbsp;
+                                                    <span class="right badge badge-primary">
+                                                        {this.state.time}
+                                                    </span>
+                                                </h1>
+                                            </div>
+                                            <div class="col-12 col-sm-4 col-md-2" id="refreshData">
+                                                <button type="button" class="btn btn-outline-primary" onClick={() => this.RefreshData()}>Refresh data</button>
+                                            </div>
+
+                                        </div>
+                                        {/* /.row */}
+                                    </div>
+                                    {/* /.container-fluid */}
+                                </div>
 
                                 <div class="row">
                                     <div class="col-12">
