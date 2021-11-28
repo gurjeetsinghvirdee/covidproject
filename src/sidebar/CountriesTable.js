@@ -37,31 +37,31 @@ export default class CountriesTable extends React.Component {
                 <Header />
                 <Sidebar />
 
-                <div class="content-header contentHeader " >
-                    <div class="container-fluid">
-                        <div class="row mb-2">
-                            <div class="col-12 col-sm-8 col-md-10">
-                                <h1 class="m-0">Data is refreshed on &nbsp;
-                                    <span class="right badge badge-primary">
-                                        {this.state.date}
-                                    </span>
-                                    &nbsp; at &nbsp;
-                                    <span class="right badge badge-primary">
-                                        {this.state.time}
-                                    </span>
-                                </h1>
-                            </div>
-                            <div class="col-12 col-sm-4 col-md-2" id="refreshData">
-                                <button type="button" class="btn btn-outline-primary" onClick={() => this.RefreshData()}>Refresh data</button>
-                            </div>
-
-                        </div>
-                        {/* /.row */}
-                    </div>
-                    {/* /.container-fluid */}
-                </div>
-
                 <div class="wrapper" >
+                    <div class="content-header contentHeader " >
+                        <div class="container-fluid">
+                            <div class="row mb-2">
+                                <div class="col-12 col-sm-8 col-md-10">
+                                    <h1 class="m-0">Data is refreshed on &nbsp;
+                                        <span class="right badge badge-primary">
+                                            {this.state.date}
+                                        </span>
+                                        &nbsp; at &nbsp;
+                                        <span class="right badge badge-primary">
+                                            {this.state.time}
+                                        </span>
+                                    </h1>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-2" id="refreshData">
+                                    <button type="button" class="btn btn-outline-primary" onClick={() => this.RefreshData()}>Refresh data</button>
+                                </div>
+
+                            </div>
+                            {/* /.row */}
+                        </div>
+                        {/* /.container-fluid */}
+                    </div>
+
                     <div class="content-wrapper " id="mainContent">
                         <section class="content" >
                             <div class="container-fluid">
@@ -114,6 +114,7 @@ export default class CountriesTable extends React.Component {
                             </div>
                         </section>
                     </div>
+                    
                 </div>
 
             </>
