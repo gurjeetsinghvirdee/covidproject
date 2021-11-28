@@ -8,7 +8,7 @@ const Sidebar = () => {
             {/* Main Sidebar Container */}
             <aside class="main-sidebar sidebar-dark-primary elevation-4" id="sidebar">
             <div class="brand-link">
-                     <span class ="brand-text font-weight-light "><b><b>COVID 19 DETAILS</b></b></span>
+                <span class ="brand-text font-weight-light "><b><b><a href="">COVID 19 DETAILS</a></b></b></span>
                 </div>
 
                 {/* Sidebar */}
