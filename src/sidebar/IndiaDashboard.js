@@ -2,8 +2,6 @@ import React from "react";
 import { Link, withRouter } from 'react-router-dom'
 import Header from "../header/Header";
 import Sidebar from "./Sidebar";
-
-import Countries from '../helper/Countries'
 import IndiaStates from '../helper/IndiaStates'
 
 import "../css/App.css";
@@ -18,8 +16,6 @@ class IndiaDashboard extends React.Component {
         s2n: "", s2c: "", s2d: "", s2r: "",
         s3n: "", s3c: "", s3d: "", s3r: "",
 
-        CountriesData: [],
-        IndiaData: null,
         totalConfirmed: "",
         totalDeaths: "",
         totalRecovered: "",
@@ -37,21 +33,14 @@ class IndiaDashboard extends React.Component {
         this.setState({ refresh: true })
     }
     componentDidMount() {
-        (this.state.refresh) || Countries().then((result) => {
-            this.setState({ CountriesData: result.Countries })
-            this.setState({ IndiaData: this.state.CountriesData[76] })
+            this.setState({
+                totalConfirmed: IndiaStates().statewise[0].confirmed,
+                totalDeaths: IndiaStates().statewise[0].deaths,
+                totalRecovered: IndiaStates().statewise[0].recovered,
+                newConfirmed: IndiaStates().statewise[0].deltaconfirmed,
+                newDeaths: IndiaStates().statewise[0].deltadeaths,
+                newRecovered: IndiaStates().statewise[0].deltarecovered,
 
-            this.setState({ totalConfirmed: this.state.IndiaData.TotalConfirmed })
-            this.setState({ totalDeaths: this.state.IndiaData.TotalDeaths })
-            this.setState({ totalRecovered: this.state.IndiaData.TotalRecovered })
-            this.setState({ newConfirmed: this.state.IndiaData.NewConfirmed })
-            this.setState({ newDeaths: this.state.IndiaData.NewDeaths })
-            this.setState({ newRecovered: this.state.IndiaData.NewRecovered })
-
-
-        })
-
-          this.setState({
                 s1n: IndiaStates().statewise[4].state, s1c: IndiaStates().statewise[4].confirmed,
                 s1d: IndiaStates().statewise[4].deaths, s1r: IndiaStates().statewise[4].recovered,
 
